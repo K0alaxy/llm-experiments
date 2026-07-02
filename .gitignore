@@ -2,6 +2,7 @@
 __pycache__/
 *.py[codz]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
@@ -216,3 +217,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# generated data — never commit vector stores or embeddings
+chroma_db/
+*.sqlite3
+
+# OS/editor
+.DS_Store
